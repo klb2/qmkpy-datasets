@@ -22,13 +22,32 @@ All datasets can be found in the `datasets/` directory.
 The currently available datasets are the following:
 
 - `billionnet`: This is a popular dataset created by Billionnet and Soutil. It
-  was originally created for the quadratic single knapsack problem [^1][^2].
+  was originally created for the quadratic single knapsack problem[^1][^2].
   The original problems can be found
   [here](https://cedric.cnam.fr/~soutif/QKP/QKP.html). For the adaption to the
   quadratic _multiple_ knapsack problem, all knapsacks are set to have the same
   capacity which is equal to 80% of the sum of all item weights divided by the
   number of knapsacks. This version of the dataset has already been used in
-  literature for the QMKP [^3][^4][^5][^6].
+  literature for the QMKP[^3][^4][^5][^6].
+
+
+## Examples
+Some example script are additionally provided in this repository.
+They demonstrate how the datasets can easily be used with any solution
+algorithm.
+
+In order to run the examples, you need to install additional packages via
+```bash
+pip3 install -r requirements.txt
+```
+
+The following examples are provided:
+
+- `example.py`: Generic script to run through all problems in a dataset and
+  solve them with multiple algorithms.
+- `example_billionnet.py`: Example script to use the Billionnet dataset. It
+  demonstrates how the dataset can be filtered to only consider problems with a
+  certain density and/or number of items/knapsacks.
 
 
 
